@@ -88,7 +88,7 @@ def generate_answer(question, contexts):
 
 def get_response(prompt):
     response = openai.Completion.create(
-        engine="text-davinci-003",
+        engine="text-curie-001",
         prompt=prompt,
         max_tokens=200,
         n=1,
